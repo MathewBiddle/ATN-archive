@@ -104,6 +104,10 @@ flowchart TD
 ## Trajectory
 * Example files can be found at this url: <https://ncei.axiomdatascience.com/atn/test/>
 * The netCDF file specification can be found at <https://ioos.github.io/ioos-atn-data/atn-sat-telem-specification-v1-0.html>
+* NCEI Collection Level Record and Dataset DOI for ATN: <https://doi.org/10.25921/wp4e-ph20>
+
+## Package generation at ATN
+* 
 
 ### Archival procedure
 * Each Archival Information Package (AIP) will consist of a single tag deployment.
