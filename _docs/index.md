@@ -10,7 +10,7 @@ summary: The ATN specification contains dataset attribution guidelines and examp
 ## **Introduction**
 
 Animal telemetry observations come from many types of instruments and deployment devices. This page provides guidance as to how specific types of animal telemetry datasets should be aligned to the netCDF data model.
-Currently, the US IOOS ATN has been developing netCDF templates for satellite trajectory observations (specifically **Argos**{: style="color: red"} tags??). However, this page (and subsequent pages) will be updated as ATN develops templates for other animal tracking observation methods and manufacturers.
+Currently, the US IOOS ATN has developed netCDF templates for satellite trajectory observations (specifically **Argos**{: style="color: red"} tags). However, this page (and subsequent pages) will be updated as ATN develops templates for other animal tracking observation methods and manufacturers.
 
 ## **Current Specification Versions**
 
