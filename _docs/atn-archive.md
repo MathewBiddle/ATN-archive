@@ -92,9 +92,9 @@ flowchart TD
 
 %% build the graph
     A --> B 
-    A .--> D
+    A .-> D
     B --> E
-    D .--> E
+    D .-> E
 ```
 
 ## Trajectory
