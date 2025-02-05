@@ -66,7 +66,7 @@ end
 
 ```
 
-### ATN WAF structure for NCEI pickup
+### ATN web accessible folder structure for NCEI pickup
 ```mermaid
 %%{
   init: {
@@ -96,22 +96,22 @@ flowchart TD
     D .-> E
 ```
 
-## Trajectory
-* Example files can be found at this url: <https://ncei.axiomdatascience.com/atn/test/>
-* The netCDF file specification can be found at <https://ioos.github.io/ioos-atn-data/atn-sat-telem-specification-v1-0.html>
-* NCEI Collection Level Record and Dataset DOI for ATN: <https://doi.org/10.25921/wp4e-ph20>
+## Satellite telemetry trajectory files
+* Example files can be found at: <https://ncei.axiomdatascience.com/atn/test/>
+* The netCDF file specification can be found at: <https://ioos.github.io/ioos-atn-data/atn-sat-telem-specification-v1-0.html>
+* NCEI collection level record and dataset doi for ATN: <https://doi.org/10.25921/wp4e-ph20>
 
 ### Package generation at ATN
 * 
 
 ### Archival procedure
 * Each Archival Information Package (AIP) will consist of a single tag deployment.
-* Describe how the packages will be organized on ATNs server for pickup from NCEI. 
+* Packages will be organized on ATN's server for pickup from NCEI:
   * The packages will be updated when they become available as deemed appropriate by the scientist or when changes are made to the ATN DAC.
-  * Packages will be made available on the web accessible folder (WAF) <https://ncei.axiomdatascience.com/atn/prod/>
+  * Packages will be made available on the web accessible folder (WAF): <https://ncei.axiomdatascience.com/atn/prod/>.
   * NCEI will check for new packages **once daily**.
   * Packages will be validated using a single manifest file which contains the md4 checksum for each file to be picked up by NCEI. The file is named `md5.txt` and will be available on the ATN WAF.
-* For new submissions (ones that NCEI hasn't made an AIP for yet)
+* For new submissions (ones that NCEI hasn't made an AIP for yet):
   * The package will be tranferred to NCEI.
   * Once the package has been verified, the manifest files will be discarded as they are artifacts from the transfer.
   * NCEI will extract the metadata from the data and metadata files to populate the AIP metadata record. 
