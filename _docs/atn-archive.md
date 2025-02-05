@@ -1,5 +1,5 @@
 ---
-title: ATN archive process 
+title: U.S. Animal Telemetry Network archive process for data at the NOAA National Centers for Environmental Information
 keywords: [ioos, metadata, netCDF, archive, NCEI]
 tags: [ioos, metadata, netCDF, archive, NCEI]
 toc: false
@@ -8,9 +8,8 @@ summary: This page documents the process for archiving the ATN observations at N
 mermaid: true
 ---
 
-# Archive SOP
-This page documents the Standard Operating Procedures for archiving the ATN observations.
-The observations have been split into [trajectory](#trajectory) and [profile](#profile) observation types.
+# Standard Operating Procedure for Archive
+This page documents the standard operating procedures for archiving the U.S. Animal Telemetry Network (ATN) telemetry data at the National Oceanic and Atmospheric Administration NOAA National Centers for Environmental Information (NCEI). The observations have been split into [trajectory](#trajectory) and [profile](#profile) observation types.
 Each section below documents the decisions made for the archival of the data at NCEI.
 
 ## Data flow
@@ -88,17 +87,14 @@ flowchart TD
 %% Nodes
     A("Deployment")
     B("Trajectory")
-    C("Profile")
-    D("Derived SSM\n(eg. Foie-gras)")
+    D("Profile")
     E("NCEI Archival Information Package")
 
 %% build the graph
     A --> B 
-    A --> C 
-    A --> D
+    A .--> D
     B --> E
-    C --> E
-    D --> E
+    D .--> E
 ```
 
 ## Trajectory
