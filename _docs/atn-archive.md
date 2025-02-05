@@ -8,11 +8,11 @@ summary: This page documents the process for archiving the ATN observations at N
 mermaid: true
 ---
 
-# Standard Operating Procedure for Archive
+# Standard operating procedure for archive
 This page documents the standard operating procedures for archiving the U.S. Animal Telemetry Network (ATN) telemetry data at the National Oceanic and Atmospheric Administration NOAA National Centers for Environmental Information (NCEI). The observations have been split into [trajectory](#trajectory) and [profile](#profile) observation types.
 Each section below documents the decisions made for the archival of the data at NCEI.
 
-## Data flow
+## Satellite telemetry tag data flow
 ```mermaid
 %%{
   init: {
@@ -48,7 +48,7 @@ M[("IOOS Data Catalog
 
 A --> B
 B -- Data released from embargo --> D
-D .-> E
+B .-> E
 D --> FC
 E .-> F
 B --> G
@@ -56,7 +56,6 @@ B -- BUFR msgs from Profiling Tags --> H
 B .->|Data released from embargo| M
 M --> FC
 H --> I
-F --collection--> D
 
 
 subgraph FC [U.S. Federal Catalogs]
