@@ -48,7 +48,7 @@ M[("IOOS Data Catalog
 
 A --> B
 B -- Data released from embargo --> D
-B .-> | Data released from embargo| .-> E
+B .-> |Data released from embargo| E
 D --> FC
 E .-> F
 B --> G
